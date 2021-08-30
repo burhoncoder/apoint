@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/main/main.css" />
+    <link rel="stylesheet" href="styles/main/responsive.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    @@include('../layouts/header.html') @@include('../layouts/modals.html')
+    <main class="main">
+      <section class="services section-margin">
+        <div class="container">
+          <div class="services-grid">
+            <article class="services__inf" data-id="service-1">
+              <h1 class="services__benifits">
+                АВТОМАТИЗИРУЙТЕ СВОЙ БИЗНЕС СЕГОДНЯ И БУДЬТЕ НА 5 ШАГОВ ВПЕРЕДИ
+                КОНКУРЕНТОВ
+              </h1>
+              <p class="services__subtitle">
+                Программа помогает полностью оцифровать механические процессы, в
+                которых задействован человеческий фактор. Тем самым появляется
+                возможность отследить, как нововведения влияют на бизнес.
+              </p>
+              <button class="services__help">Получить консультацию</button>
+            </article>
+
+            <article class="services__item" data-id="service-2">
+              <img src="images/service1.png" alt="Service" />
+              <h1 class="services__title">ERP</h1>
+              <p class="services__descr">
+                Автоматизация производственных процессов
+              </p>
+              <button class="services__more">
+                <img src="images/arrow-right.png" alt="Arrow" />
+              </button>
+            </article>
+            <article class="services__item" data-id="service-3">
+              <img src="images/service2.png" alt="Service" />
+              <h1 class="services__title">СКЛАД</h1>
+              <p class="services__descr">
+                Автоматизация производственных процессов
+              </p>
+              <button class="services__more">
+                <img src="images/arrow-right.png" alt="Arrow" />
+              </button>
+            </article>
+            <article class="services__item" data-id="service-4">
+              <img src="images/service3.png" alt="Service" />
+              <h1 class="services__title">HR</h1>
+              <p class="services__descr">
+                Автоматизация производственных процессов
+              </p>
+              <button class="services__more">
+                <img src="images/arrow-right.png" alt="Arrow" />
+              </button>
+            </article>
+            <article class="services__item" data-id="service-5">
+              <img src="images/service4.png" alt="Service" />
+              <h1 class="services__title">KPI</h1>
+              <p class="services__descr">
+                Автоматизация производственных процессов
+              </p>
+              <button class="services__more">
+                <img src="images/arrow-right.png" alt="Arrow" />
+              </button>
+            </article>
+            <article class="services__item" data-id="service-6">
+              <img src="images/service5.png" alt="Service" />
+              <h1 class="services__title">CRM</h1>
+              <p class="services__descr">
+                Автоматизация производственных процессов
+              </p>
+              <button class="services__more">
+                <img src="images/arrow-right.png" alt="Arrow" />
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="callback section-margin">
+        <h1 class="callback__title">
+          Позвоните или оставьте ваши контакты, мы сами свяжемся с вами
+        </h1>
+
+        <div class="callback-inner">
+          <div class="container">
+            <div class="callback-grid">
+              <img src="images/logo2.png" alt="Logo" />
+              <form class="callback-form">
+                <input
+                  class="callback__input"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  class="callback__input"
+                  type="tel"
+                  placeholder="Номер телефона"
+                />
+                <button class="callback__btn">Позвоните</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features section-margin">
+        <div class="container">
+          <div class="features-inner">
+            <img src="images/features.png" alt="Features img" />
+            <div class="features-content">
+              <h1 class="section-title">ЧТО МОЖНО ДОСТИЧЬ С ПОМОЩЬЮ APOINT?</h1>
+              <ul class="features__list">
+                <li class="features__item">
+                  Мониторинг производственных процессов
+                </li>
+                <li class="features__item">
+                  Автоматизацию любых видов оказываемых услуг
+                </li>
+                <li class="features__item">
+                  Уменьшение и отслеживание истории бракованных продуктов
+                </li>
+                <li class="features__item">
+                  Сокращение времени обслуживания клиентов в 3 раза
+                </li>
+                <li class="features__item">
+                  Сокращение товарных излишков склада на 25%
+                </li>
+                <li class="features__item">
+                  Постоянное наличие сырья и ассортимента приблизилось к 100%
+                </li>
+                <li class="features__item">
+                  Сокращения расчета заработной платы сотрудника на 99%
+                </li>
+                <li class="features__item">
+                  Наличие всех необходимых отчетов в руках
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reasons section-margin">
+        <div class="container">
+          <div class="title-wrapper">
+            <h1 class="section-title">
+              За счет чего достигается такой результат?
+            </h1>
+          </div>
+          <div class="reasons-grid">
+            <div class="reasons__wrapper">
+              <article class="reasons__item">
+                <div class="reasons__num"><span>1</span></div>
+                <p class="reasons__descr">
+                  Сокращение хищений товаров со стороны сотрудников
+                </p>
+              </article>
+            </div>
+            <div class="reasons__wrapper">
+              <article class="reasons__item">
+                <div class="reasons__num"><span>1</span></div>
+                <p class="reasons__descr">
+                  Сокращение хищений товаров со стороны сотрудников
+                </p>
+              </article>
+            </div>
+            <div class="reasons__wrapper">
+              <article class="reasons__item">
+                <div class="reasons__num"><span>1</span></div>
+                <p class="reasons__descr">
+                  Сокращение хищений товаров со стороны сотрудников
+                </p>
+              </article>
+            </div>
+            <div class="reasons__wrapper">
+              <article class="reasons__item">
+                <div class="reasons__num"><span>1</span></div>
+                <p class="reasons__descr">
+                  Сокращение хищений товаров со стороны сотрудников
+                </p>
+              </article>
+            </div>
+            <div class="reasons__wrapper">
+              <article class="reasons__item">
+                <div class="reasons__num"><span>1</span></div>
+                <p class="reasons__descr">
+                  Сокращение хищений товаров со стороны сотрудников
+                </p>
+              </article>
+            </div>
+            <div class="reasons__wrapper">
+              <article class="reasons__item">
+                <div class="reasons__num"><span>1</span></div>
+                <p class="reasons__descr">
+                  Сокращение хищений товаров со стороны сотрудников
+                </p>
+              </article>
+            </div>
+            <div class="reasons__wrapper">
+              <article class="reasons__item">
+                <div class="reasons__num"><span>1</span></div>
+                <p class="reasons__descr">
+                  Сокращение хищений товаров со стороны сотрудников
+                </p>
+              </article>
+            </div>
+            <div class="reasons__wrapper">
+              <article class="reasons__item">
+                <div class="reasons__num"><span>1</span></div>
+                <p class="reasons__descr">
+                  Сокращение хищений товаров со стороны сотрудников
+                </p>
+              </article>
+            </div>
+            <div class="reasons__wrapper">
+              <article class="reasons__item">
+                <div class="reasons__num"><span>1</span></div>
+                <p class="reasons__descr">
+                  Сокращение хищений товаров со стороны сотрудников
+                </p>
+              </article>
+            </div>
+            <div class="reasons__wrapper">
+              <article class="reasons__item">
+                <div class="reasons__num"><span>1</span></div>
+                <p class="reasons__descr">
+                  Сокращение хищений товаров со стороны сотрудников
+                </p>
+              </article>
+            </div>
+            <div class="reasons__wrapper">
+              <article class="reasons__item">
+                <div class="reasons__num"><span>1</span></div>
+                <p class="reasons__descr">
+                  Сокращение хищений товаров со стороны сотрудников
+                </p>
+              </article>
+            </div>
+            <div class="reasons__wrapper">
+              <article class="reasons__item">
+                <div class="reasons__num"><span>1</span></div>
+                <p class="reasons__descr">
+                  Сокращение хищений товаров со стороны сотрудников
+                </p>
+              </article>
+            </div>
+          </div>
+          <div class="leaveinf">
+            <p class="leaveinf-text">
+              Оставьте свой номер телефона – мы перезвоним вам и
+              проконсультируем по всем вопросам!
+            </p>
+            <form class="leaveinf-form">
+              <input
+                class="leaveinf-form__input"
+                type="tel"
+                placeholder="Телефон номер"
+              />
+              <button class="leaveinf-form__btn">Перезвонить вам</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="apps section-margin">
+        <div class="container">
+          <div class="title-wrapper">
+            <h1 class="section-title">
+              4 приложение поможет вам стать более мобильным
+            </h1>
+          </div>
+          <div class="apps-grid">
+            <article class="apps__item">
+              <h1 class="apps__name">Apoint Boss</h1>
+              <img src="images/app1.png" alt="App Image" />
+            </article>
+            <article class="apps__item">
+              <h1 class="apps__name">Apoint Shipment</h1>
+              <img src="images/app2.png" alt="App Image" />
+            </article>
+            <article class="apps__item">
+              <h1 class="apps__name">Apoint Timepad</h1>
+              <img src="images/app3.png" alt="App Image" />
+            </article>
+            <article class="apps__item">
+              <h1 class="apps__name">Apoint Sales</h1>
+              <img src="images/app4.png" alt="App Image" />
+            </article>
+          </div>
+          <div class="apps-inf">
+            <div class="apps-inf__left">
+              <p class="apps__subtitle">
+                Boss app даёт возможность полностью контролировать рабочий
+                процесс удаленно. Теперь в вашем телефоне есть вся информация о
+                компании:
+              </p>
+              <ul>
+                <li class="apps__benefit">Продажа;</li>
+                <li class="apps__benefit">приход на склад;</li>
+                <li class="apps__benefit">Остаток;</li>
+                <li class="apps__benefit">Заказы;</li>
+                <li class="apps__benefit">Расход.</li>
+              </ul>
+            </div>
+            <img src="images/apps-inf.jpg" alt="apps-inf" />
+          </div>
+        </div>
+      </section>
+      <section class="field section-margin">
+        <div class="container">
+          <div class="slider-head">
+            <h1 class="slider-title">
+              Программа уже готова для следующих направлений
+            </h1>
+            <div class="slider-control">
+              <button class="swiper-button-prev">
+                <img src="images/arrow-left.jpg" alt="arrow" />
+              </button>
+              <button class="swiper-button-next">
+                <img src="images/arrow-right-slider.jpg" alt="arrow" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="field__item">
+                  <img src="images/field1.jpg" alt="field" />
+                  <span class="field__name">Трикотажные фабрики</span>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="field__item">
+                  <img src="images/field3.jpg" alt="field" />
+                  <span class="field__name">Трикотажные фабрики</span>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="field__item">
+                  <img src="images/field2.jpg" alt="field" />
+                  <span class="field__name">Производство мебели</span>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="field__item">
+                  <img src="images/field3.jpg" alt="field" />
+                  <span class="field__name">Трикотажные фабрики</span>
+                </article>
+              </div>
+            </div>
+          </div>
+          <button class="field__btn">Установить немедленно</button>
+        </div>
+      </section>
+      <section class="comment section-margin">
+        <div class="container">
+          <div class="comment-grid">
+            <div class="comment__img">
+              <img src="images/comment.png" alt="Comment img" />
+            </div>
+            <div class="comment__content">
+              <div class="slider-head">
+                <h1 class="slider-title">
+                  Программа уже готова для следующих направлений
+                </h1>
+                <div class="slider-control">
+                  <button class="slider-btn-prev slider-btn">
+                    <svg
+                      width="28"
+                      height="18"
+                      viewbox="0 0 28 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.27344 16.7642L1.18253 8.97261M1.18253 8.97261L8.27344 1.18106M1.18253 8.97261L26.3947 8.97261"
+                        stroke="#929292"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <button class="slider-btn-next slider-btn">
+                    <svg
+                      width="28"
+                      height="18"
+                      viewbox="0 0 28 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.27344 16.7642L1.18253 8.97261M1.18253 8.97261L8.27344 1.18106M1.18253 8.97261L26.3947 8.97261"
+                        stroke="#929292"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="comment-inf">
+                <div class="d-flex">
+                  <h2 class="comment__person">Aziz Pulatov</h2>
+                  <img src="images/feedback.jpg" alt="stars" />
+                </div>
+                <div class="d-flex">
+                  <h2 class="comment__job">Директор ARS Triomax</h2>
+                  <span class="comment__company">Трикотажная фабрика</span>
+                </div>
+                <p class="comment__text">
+                  В последние годы в нашей стране проводится масштабная работа
+                  по строительству новых и модернизации действующих промышленных
+                  предприятий, внедрению в производство передовых технологий,
+                  развитию отечественного производства. Всесторонняя поддержка
+                  региональных предприятий и создание возможностей для их
+                  устойчивой работы способствует увеличению объема производства.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news section-margin">
+        <div class="container">
+          <div class="slider-head">
+            <div class="slider-title-wrapper">
+              <h1 class="slider-title">
+                Программа уже готова для следующих направлений
+              </h1>
+              <p class="slider-subtitle">
+                Все, что касается Apoint и автоматизации производства и
+                бизнес-процессов.
+              </p>
+            </div>
+            <div class="slider-control">
+              <button class="swiper-button-prev slider-btn-prev slider-btn">
+                <svg
+                  width="28"
+                  height="18"
+                  viewbox="0 0 28 18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.27344 16.7642L1.18253 8.97261M1.18253 8.97261L8.27344 1.18106M1.18253 8.97261L26.3947 8.97261"
+                    stroke="#929292"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button class="swiper-button-next slider-btn-next slider-btn">
+                <svg
+                  width="28"
+                  height="18"
+                  viewbox="0 0 28 18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.27344 16.7642L1.18253 8.97261M1.18253 8.97261L8.27344 1.18106M1.18253 8.97261L26.3947 8.97261"
+                    stroke="#929292"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="news__item">
+                  <img src="images/news1.jpg" alt="news" />
+                  <span class="news__field">Новости</span>
+                  <h1 class="news__title">
+                    «Есть ощущение, что нас использовали»: рестораторы Москвы об
+                    отмене QR-кодов
+                  </h1>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="news__item">
+                  <img src="images/news2.jpg" alt="news" />
+                  <span class="news__field">Новости</span>
+                  <h1 class="news__title">
+                    «Есть ощущение, что нас использовали»: рестораторы Москвы об
+                    отмене QR-кодов
+                  </h1>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="news__item">
+                  <img src="images/news3.jpg" alt="news" />
+                  <span class="news__field">Новости</span>
+                  <h1 class="news__title">
+                    «Есть ощущение, что нас использовали»: рестораторы Москвы об
+                    отмене QR-кодов
+                  </h1>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="news__item">
+                  <img src="images/news2.jpg" alt="news" />
+                  <span class="news__field">Новости</span>
+                  <h1 class="news__title">
+                    «Есть ощущение, что нас использовали»: рестораторы Москвы об
+                    отмене QR-кодов
+                  </h1>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('../layouts/footer.html')
+  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</html>

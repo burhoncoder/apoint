@@ -1,0 +1,132 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+  }
+  &::after {
+    bottom: 100px;
+    left: 2%;
+    width: 120px;
+    height: 90px;
+    background: url('../../images/footer-bg1.png') no-repeat center;
+  }
+  &::before {
+    top: 0;
+    right: 10%;
+    width: 450px;
+    height: 250px;
+    background: url('../../images/footer-bg2.png') no-repeat center;
+  }
+  &-top {
+    background: #14151c;
+  }
+  &-top-inner {
+    position: relative;
+    z-index: 3;
+    padding: 60px 35px;
+  }
+  &__leaveinf {
+    padding-bottom: 60px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #424242;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    max-width: 480px;
+    line-height: 28px;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #b4b6c4;
+    opacity: 0.8;
+    margin-bottom: 30px;
+  }
+  &__contacts {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  &__column {
+    color: #b4b6c4;
+    font-family: 'Chivo', sans-serif;
+  }
+  &__column > a {
+    display: block;
+  }
+  &__column > img {
+    margin-bottom: 20px;
+  }
+  &__inf {
+    max-width: 400px;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 1.6rem;
+  }
+  &__details {
+    font-weight: normal;
+    font-size: 16px;
+    padding-left: 30px;
+  }
+  &__details:first-child {
+    margin-bottom: 10px;
+    background: url('../../images/message.png') no-repeat left center;
+  }
+  &__details:last-child {
+    background: url('../../images/telegram.png') no-repeat left center;
+  }
+  &__phone {
+    font-family: 'Manrope', sans-serif;
+    padding-left: 35px;
+    font-weight: 600;
+    font-size: 3rem;
+    background: url('../../images/callI.png') no-repeat left center;
+  }
+  &__phone span {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+
+  &-bottom {
+    background: #272727;
+  }
+  &-bottom-inner {
+    position: relative;
+    padding: 30px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-bottom-inner::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 35px;
+    right: 35px;
+    z-index: 2;
+
+    height: 1px;
+    background-color: #424242;
+  }
+  &__license {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #b4b6c4;
+    opacity: 0.8;
+  }
+  &__social {
+    display: flex;
+  }
+  &__social a:not(:last-child) {
+    margin-right: 15px;
+  }
+}

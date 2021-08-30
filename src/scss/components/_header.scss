@@ -1,0 +1,220 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+  }
+  &::before {
+    left: 0;
+    width: calc(50% - 100px);
+    height: 90%;
+    background: linear-gradient(180deg, #5b5b5b 0%, #121429 100%);
+  }
+  &::after {
+    right: 0;
+    width: calc(50% + 100px);
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -20px 24px 184px rgba(111, 111, 111, 0.33);
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-left {
+    width: calc(50% - 100px);
+    overflow: hidden;
+  }
+  &-right {
+    padding: 0 0 120px 20px;
+    width: calc(50% + 100px);
+  }
+  &__menu {
+    height: 80px;
+    padding: 25px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-left &__menu {
+    padding-right: 15px;
+  }
+  &__link {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  &__link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    transition: 0.2s ease-in-out;
+  }
+  &__link:hover::after {
+    width: 100%;
+  }
+  &-left &__link {
+    color: #fff;
+  }
+  &-left &__link::after {
+    right: 0;
+    background-color: #fff;
+  }
+  &-right &__link {
+    color: rgba(30, 37, 50, 0.6);
+  }
+  &-right &__link::after {
+    left: 0;
+    background-color: rgba(30, 37, 50, 0.6);
+  }
+  &__control {
+    display: flex;
+  }
+  &__lang {
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-right: 13px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+  }
+  &__lang--active {
+    border: none;
+    background-color: #f1f1f1;
+  }
+  &__install {
+    background-color: var(--blue);
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 12px 40px;
+    border-radius: 50px;
+  }
+  &-left &__menu {
+    margin: 0 0 80px 0;
+  }
+  &__video {
+    position: relative;
+  }
+  &__video::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 0;
+    height: 500px;
+    background: url('../../images/banner-left.png');
+  }
+  &__video-wrapper {
+    max-width: 240px;
+    width: 40%;
+    position: relative;
+    z-index: 2;
+  }
+  &__video-wrapper img:first-child {
+    border-radius: 10px;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__video-wrapper img:last-child {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+  }
+  &__video-wrapper::after {
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    opacity: 0;
+    animation: btn-play 1s ease-in-out infinite normal;
+  }
+  &-right &__menu {
+    margin: 0 0 30px 0;
+  }
+  &__contacts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__phone {
+    line-height: 100%;
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: var(--blue);
+    padding-left: 45px;
+    background: url('../../images/callI.png') no-repeat left center;
+    span {
+      font-weight: 400;
+      font-size: 2.2rem;
+    }
+  }
+  &__inf {
+    padding-left: 30px;
+  }
+  &__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+  }
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+  }
+  &__descr {
+    padding: 15px 25px;
+    background-color: #efefef;
+    font-weight: 500;
+    font-size: 1.9rem;
+    margin-bottom: 70px;
+  }
+  &__get-help {
+    background-color: var(--blue);
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding: 18px 35px;
+    border-radius: 10px;
+  }
+}
+
+@keyframes btn-play {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.3;
+    width: 100px;
+    height: 100px;
+  }
+}
+.header-news-inner {
+  height: 120px;
+  overflow: hidden;
+}

@@ -1,0 +1,16 @@
+body {
+  font-family: 'Manrope', sans-serif;
+}
+// HELPERS
+@import '../helpers/fonts';
+@import '../helpers/variables';
+@import '../helpers/universals';
+
+// COMPONENTS
+@import '../components/header';
+@import '../components/footer';
+@import '../components/modal';
+
+// PAGES
+@import '../pages/home';
+@import '../pages/news-inside';
