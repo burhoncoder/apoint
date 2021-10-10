@@ -63,10 +63,10 @@
     background-color: #f6f9fb;
   }
   &__item:nth-child(2n) {
-    background: #f5f5f5 url('../../images/apoint-white.png') no-repeat 20px 105%;
+    background: #f5f5f5 url("../../images/apoint-white.png") no-repeat 20px 105%;
   }
   &__item:nth-child(2n + 1) {
-    background: url('../../images/apoint-grey.png') no-repeat 20px 105%;
+    background: url("../../images/apoint-grey.png") no-repeat 20px 105%;
   }
   &__item:hover {
     z-index: 2;
@@ -114,11 +114,11 @@
     color: #707070;
   }
   &__input:first-child {
-    background: #fff url('../../images/nameI.svg') no-repeat 15px center;
+    background: #fff url("../../images/nameI.svg") no-repeat 15px center;
   }
   &__input:nth-child(2) {
     width: 40%;
-    background: #fff url('../../images/phoneI.svg') no-repeat 15px center;
+    background: #fff url("../../images/phoneI.svg") no-repeat 15px center;
   }
   &__btn {
     background-color: #fff;
@@ -157,7 +157,7 @@
     margin-bottom: 9px;
   }
   &__item::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 14px;
     left: 20px;
@@ -171,14 +171,14 @@
 .reasons {
   position: relative;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -50px;
     left: 0;
     z-index: -1;
     width: 100%;
     height: 350px;
-    background: url('../../images/bg.png') no-repeat center;
+    background: url("../../images/bg.png") no-repeat center;
     background-size: cover;
   }
   &-grid {
@@ -194,7 +194,7 @@
     width: 100%;
     height: 100%;
     padding: 30px 50px;
-    background: #ffffff url('../../images/apoint-grey.png') no-repeat right 99%;
+    background: #ffffff url("../../images/apoint-grey.png") no-repeat right 99%;
     box-shadow: 30px 9px 80px rgba(50, 19, 21, 0.05);
     border-radius: 5px;
     text-align: center;
@@ -209,7 +209,7 @@
     margin: 0 auto 15px auto;
   }
   &__num::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -268,7 +268,7 @@
     background: var(--blue);
     padding: 15px 35px;
     border-radius: 10px;
-    font-family: 'Chivo', sans-serif;
+    font-family: "Chivo", sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
     color: #fff;
@@ -283,14 +283,14 @@
     flex-wrap: wrap;
   }
   &-grid::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 80%;
     left: 0;
     z-index: -1;
     width: 80px;
     height: 135px;
-    background: url('../../images/app-arrow.png') no-repeat center;
+    background: url("../../images/app-arrow.png") no-repeat center;
     background-size: cover;
   }
   &__item {
@@ -302,7 +302,7 @@
   }
   &__name {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 3rem;
   }
@@ -323,7 +323,7 @@
     font-weight: 400;
     font-size: 2rem;
     padding: 10px 0 10px 30px;
-    background: url('../../images/ticket.png') no-repeat left center;
+    background: url("../../images/ticket.png") no-repeat left center;
   }
   &__inf img {
     width: 32%;
@@ -336,7 +336,7 @@
 .field {
   position: relative;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     left: 0;
@@ -398,14 +398,14 @@
 .comment {
   position: relative;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 80%;
     left: 18%;
     z-index: -1;
     width: 15%;
     height: 160px;
-    background: url('../../images/comments-after.png') no-repeat center;
+    background: url("../../images/comments-after.png") no-repeat center;
   }
   &-grid {
     display: flex;
@@ -417,13 +417,13 @@
     position: relative;
   }
   &__img::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 10px;
     right: 30px;
     width: 90px;
     height: 90px;
-    background: url('../../images/comment-quotatio.png') no-repeat center;
+    background: url("../../images/comment-quotatio.png") no-repeat center;
   }
   &__img img {
     width: 100%;
@@ -485,12 +485,6 @@
 }
 .slider-btn-next {
   transform: rotate(180deg);
-}
-.slider-btn:hover {
-  background-color: var(--blue);
-}
-.slider-btn:hover svg {
-  fill: #fff;
 }
 
 .news {
